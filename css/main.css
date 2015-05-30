@@ -1,0 +1,25 @@
+@font-face{
+	font-family: 'Fuentecita';
+	src: url('PAC-FONT.woff2') format('woff2'),
+	url('PAC-FONT.woff') format('woff'),
+	url('PAC-FONT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+img{
+	max-width: 100%;
+}
+
+.no-float{
+	float: none;
+}
+
+.top-margin{
+	margin-top: 50px;
+}
+
+.pac{
+	font-family: 'Fuentecita', sans-serif;
+}
