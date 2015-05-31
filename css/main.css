@@ -5,6 +5,10 @@ img{
 	max-width: 100%;
 }
 
+.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
 .no-float{
 	float: none;
 }
