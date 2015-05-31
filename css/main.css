@@ -1,13 +1,3 @@
-@font-face{
-	font-family: 'Fuentecita';
-	src: url('PAC-FONT.woff2') format('woff2'),
-	url('PAC-FONT.woff') format('woff'),
-	url('PAC-FONT.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
 lato{
 	font-family: 'Lato', sans-serif;
 }
@@ -27,6 +17,11 @@ img{
 	font-family: 'Patrick Hand', cursive;
 	font-size: 8em;
 }
-.pac{
-	font-family: 'Fuentecita', sans-serif;
+
+.ocn-back{
+	background-image: url('https://static.oc.tc/assets/index/marketing/6-3cd4804b44a82f9b047b07d2e11745f7.png');
+}
+
+.white-text{
+	color: white;
 }
