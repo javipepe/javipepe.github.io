@@ -1,6 +1,9 @@
 .lato{
 	font-family: 'Lato', sans-serif;
 }
+.bg{
+	background-image: url('http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg');
+}
 .tenrightmargin{
 	margin-right: 10px;
 }
