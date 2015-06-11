@@ -1,6 +1,9 @@
 .lato{
 	font-family: 'Lato', sans-serif;
 }
+.tenrightmargin{
+	margin-right: 10px;
+}
 img{
 	max-width: 100%;
 }
