@@ -259,6 +259,26 @@ h2 {
   animation-delay: 0.5s;
 }
 
+.custom-triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 20px 30px;
+  border-color: transparent transparent #494c4f transparent;
+  margin-bottom: 0px;
+
+}
+
+.speech-bubble{
+  border: 2px solid #494c4f;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  margin-top:0px;
+}
+}
+
 /* Media Queries 
 @media (max-width: 420px) {
   h1 {
