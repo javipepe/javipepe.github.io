@@ -16,10 +16,10 @@
 }
 .ribbon {
   position: absolute;
-  right: -2px; top: -2px;
+  right: -1px; top: -1px;
   z-index: 1;
   overflow: hidden;
-  width: 75px; height: 75px;
+  width: 100px; height: 100px;
   text-align: right;
 }
 .ribbon span {
