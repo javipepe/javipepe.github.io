@@ -235,13 +235,13 @@ h1, h2 {
   font-weight: 300;
 }
 h1 {
-  font-size: 54px;
+  font-size: 100%;
   line-height: 65px;
   letter-spacing: 0.1em;
 }
 h2 {
   margin: 40px auto 10px auto;
-  font-size: 27px;
+  font-size: 100%;
   line-height: 33px;
 }
 
