@@ -56,7 +56,7 @@
 		var ambutton = document.getElementById('ambut');
 		var snbutton = document.getElementById('snbut');
 
-		button.onclick = function() {
+		cbutton.onclick = function() {
 	    var cdiv = document.getElementById('cnt');
 	    var amdiv = document.getElementById('am');
 	    var sndiv = document.getElementById('sn');
@@ -72,18 +72,11 @@
 	        cbutton.value = 'Hide contact';
 	        cbutton.style.width = '300px';
 	    }
-	    if (sndiv.style.display !== 'none') {
-	        sndiv.style.display = 'none';
-	        snbutton.value = 'Social Networks';
-	        snbutton.style.width = '250px';
-	    }
-	    else {
-	    	amdiv.style.display = 'none';
-	    	sndiv.style.display = 'block';
-	        cdiv.style.display = 'none';
-	        snbutton.value = 'Hide Social Networks';
-	        snbutton.style.width = '310px';
-	    }
+		};
+		ambutton.onclick = function() {
+	    var cdiv = document.getElementById('cnt');
+	    var amdiv = document.getElementById('am');
+	    var sndiv = document.getElementById('sn');
 	    if (amdiv.style.display !== 'none') {
 	        amdiv.style.display = 'none';
 	        ambutton.value = 'About Me';
@@ -96,7 +89,27 @@
 	        cbutton.value = 'Hide About Me';
 	        cbutton.style.width = '300px';
 	    }
-	};
+		};
+		snbutton.onclick = function() {
+	    var cdiv = document.getElementById('cnt');
+	    var amdiv = document.getElementById('am');
+	    var sndiv = document.getElementById('sn');
+	    if (sndiv.style.display !== 'none') {
+	        sndiv.style.display = 'none';
+	        snbutton.value = 'Social Networks';
+	        snbutton.style.width = '250px';
+	    }
+	    else {
+	    	amdiv.style.display = 'none';
+	    	sndiv.style.display = 'block';
+	        cdiv.style.display = 'none';
+	        snbutton.value = 'Hide Social Networks';
+	        snbutton.style.width = '310px';
+	    }
+		};
+	    
+	    
+	
 </script>
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
