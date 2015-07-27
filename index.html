@@ -22,9 +22,15 @@
 	<h3>All-around guy. Developer.</h3>
 </div>
 <div class="animated fadeInUpBig delay-1">
-	<input id="button" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;" value="Contact">
+	<input id="conbut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="Contact"><input id="ambut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="About Me"><input id="snbut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;" value="Social Networks">
 </div>
 
+<div id="am" style="margin-top:3em;display: none;">
+	<div class="speech-bubble"><h4>I'm javipepe, but friends call me javi. I'm 14 years old and I'm from Spain. I ref for the <a style="color:#f20;" href="https://oc.tc">Overcast Network</a>. I also develop, moderate and ref for the <a style="color: #f20" href="https://avicus.net">Avicus Network</a>. I am fluent in English and in Spanish talking in communication languages, but I also use Java, HTML, CSS, JavaScript, and some C++ in a more "programmed" manner. Feel free to contact me by going into the Contact or Social Networks part.</h4></div>
+</div>
+<div id="sn" style="margin-top: 3em; display: none;">
+	<a style="margin-right: 1em;" href="http://twitter.com/ocnjavipepe"><i onmouseover="this.style.color = '#55acee';" onmouseout="this.style.color = '#66757f';" style="color: #66757f" class="fa fa-twitter fa-3"></i></a><a style="margin-right: 1em;" href="http://github.com/javipepe"><i onmouseover="this.style.color = '#8E44AD';" onmouseout="this.style.color = '#66757f';" style="color: #66757f" class="fa fa-github fa-3"></i></a><a style="margin-right: 1em;" href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g"><i onmouseover="this.style.color = '#e52d27';" onmouseout="this.style.color = '#66757f';" style="color: #66757f" class="fa fa-play fa-3"></i></a>
+</div>
 <div id="cnt" style="margin-top: 3em; display: none;border-radius: 5px;" class="contact">
     <form id="contact_form" action="//formspree.io/javipepeoctc@gmail.com" method="POST" enctype="multipart/form-data">
 	<div style="margin-top: 1.5em;" class="row">
@@ -46,19 +52,49 @@
 </div>
 
 <script type="text/javascript">
-		var button = document.getElementById('button');
+		var cbutton = document.getElementById('conbut');
+		var ambutton = document.getElementById('ambut');
+		var snbutton = document.getElementById('snbut');
 
 		button.onclick = function() {
-	    var div = document.getElementById('cnt');
-	    if (div.style.display !== 'none') {
-	        div.style.display = 'none';
-	        button.value = 'Contact';
-	        button.style.width = '100px';
+	    var cdiv = document.getElementById('cnt');
+	    var amdiv = document.getElementById('am');
+	    var sndiv = document.getElementById('sn');
+	    if (cdiv.style.display !== 'none') {
+	        cdiv.style.display = 'none';
+	        cbutton.value = 'Contact';
+	        cbutton.style.width = '100px';
 	    }
 	    else {
-	        div.style.display = 'block';
-	        button.value = 'Hide contact';
-	        button.style.width = '300px';
+	    	amdiv.style.display = 'none';
+	    	sndiv.style.display = 'none';
+	        cdiv.style.display = 'block';
+	        cbutton.value = 'Hide contact';
+	        cbutton.style.width = '300px';
+	    }
+	    if (sndiv.style.display !== 'none') {
+	        sndiv.style.display = 'none';
+	        snbutton.value = 'Social Networks';
+	        snbutton.style.width = '250px';
+	    }
+	    else {
+	    	amdiv.style.display = 'none';
+	    	sndiv.style.display = 'block';
+	        cdiv.style.display = 'none';
+	        snbutton.value = 'Hide Social Networks';
+	        snbutton.style.width = '310px';
+	    }
+	    if (amdiv.style.display !== 'none') {
+	        amdiv.style.display = 'none';
+	        ambutton.value = 'About Me';
+	        ambutton.style.width = '130px';
+	    }
+	    else {
+	    	amdiv.style.display = 'block';
+	    	sndiv.style.display = 'none';
+	        cdiv.style.display = 'none';
+	        cbutton.value = 'Hide About Me';
+	        cbutton.style.width = '300px';
 	    }
 	};
 </script>
