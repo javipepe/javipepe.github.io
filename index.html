@@ -27,35 +27,37 @@
 	<input id="conbut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="Contact"><input id="ambut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="About Me"><input id="snbut" type="button" class="ghost-button-full-color" style="width: 200px;margin-top: 1em;" value="Social Networks">
 </div>
 
-<div id="am" style="color:white;margin-top:3em;display: none;">
+<div id="am" style="color:black;margin-top:3em;display: none;padding:10em; background-color: white;">
 	I'm javipepe, but friends call me javi. I'm 14 years old and I'm from Spain. I ref for the <a style="color:#f20;" href="https://oc.tc">Overcast Network</a>. I also develop, moderate and ref for the <a style="color: #f20" href="https://avicus.net">Avicus Network</a>. I am fluent in English and in Spanish talking in communication languages, but I also use Java, HTML, CSS, JavaScript, and some C++ in a more "programmed" manner. Feel free to contact me by going into the Contact or Social Networks part.
 </div>
 <div id="sn" style="margin-top: 3em; display: none;">
 	<a style="width: 300px; height: 300px;margin-right: 1em;" href="http://twitter.com/ocnjavipepe"><i onmouseover="this.style.color = '#55acee';" onmouseout="this.style.color = 'white';" style="color: white" class="fa fa-twitter fa-3x"></i></a><a style="width: 300px; height: 300px;margin-right: 1em;" href="http://github.com/javipepe"><i onmouseover="this.style.color = '#8E44AD';" onmouseout="this.style.color = 'white';" style="color: white" class="fa fa-github fa-3x"></i></a><a style="width: 300px; height: 300px;margin-right: 1em;" href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g"><i onmouseover="this.style.color = '#e52d27';" onmouseout="this.style.color = 'white';" style="color: white" class="fa fa-play fa-3x"></i></a>
 </div>
-<div id="cnt" style="margin-top: 1.5em; display: none;border-radius: 5px;" class="contact">
+<div id="cnt" style="margin-top: 1.5em; display: none;border-radius: 5px;width:100%;" class="contact">
 	<img src="http://antimatter15.com/articles/2015/Blog%20Reboot/construction.gif">
-    <!--<form id="contact_form" action="//formspree.io/javipepeoctc@gmail.com" method="POST" enctype="multipart/form-data">
-    	<div style="width: 860px; overflow:hidden;">
-    		<div style="float:left; margin-right:10px;">
-			<div style="width: 420px; margin-bottom:8px;" class="row">
-				<label style="color:white;" for="name">Name</label>
-				<input style="width: 302px;height: 38px;margin: 0 0 20px 30px;padding: 0 18px;background: white;border: 1px solid #fffbec;-moz-box-shadow: 0 5px 0 0 #faedb5;-webkit-box-shadow: 0 5px 0 0 #faedb5;box-shadow: 0 5px 0 0 #faedb5;font-size: 15px;color: black;outline: none;" id="name" class="form-control input" name="name" type="text" value="" size="30" placeholder="javipepe" /><br />
+	<h2>Work in Progress</h2>
+    <form id="contact_form" action="//formspree.io/javipepeoctc@gmail.com" method="POST" enctype="multipart/form-data">
+	<div style="width:1000px;">
+		<!--Now two divs that will be at the left 20 px margin inbetween left and right-->
+		<div style="overflow:hidden">
+			<div style="width:492px;margin-right:8px;float:left;" leftdivcontainer>
+				<!--80px height. 16 bottom margin-->
+				<div class="forminput">
+					<label style="text-align: left;" for="name">Name</label>
+					<input id="name" name="name" type="text" placeholder="John Appleased" class="form-control input" value="" size="30">
+				</div>
+				<div class="forminput" style="margin-top: 5px; margin-bottom: 0px">
+					<label style="text-align: left;" for="email">Email</label>
+					<input id="email" name="email" type="email" placeholder="support@javi.io" class="form-control input" value="" size="30">
+				</div>
 			</div>
-			<div style="margin-top: 8px;width: 420x;" class="row">
-				<label style="color:white;" for="email">Email</label>
-				<input style="width: 302px;height: 38px;margin: 0 0 20px 30px;padding: 0 18px;background: white;border: 1px solid #fffbec;-moz-box-shadow: 0 5px 0 0 #faedb5;-webkit-box-shadow: 0 5px 0 0 #faedb5;box-shadow: 0 5px 0 0 #faedb5;font-size: 15px;color: black;outline: none;" id="email" class="form-control input" name="email" type="email" value="" size="30" placeholder="me@this.io"/><br />
+			<div class="textareainput" style="width:492px; margin-left:8px; overflow:hidden;">
+				<label style="text-align: left;" for="message">Message</label>
+				<textarea id="message" class="form-control input" name="message" rows="7" cols="30" placeholder="So it turned out that..."></textarea>
 			</div>
-		</div>
-		<div style="margin-left: 10px;overflow:hidden;">
-			<label style="color:white;" for="message">Message</label>
-			<textarea style="width: 302px;height: 92px;margin: 0 0 20px 30px;padding: 10px 18px 0 18px;background: white;border: 1px solid #fffbec;-moz-box-shadow: 0 5px 0 0 #faedb5;-webkit-box-shadow: 0 5px 0 0 #faedb5;box-shadow: 0 5px 0 0 #faedb5;font-size: 15px;color: black;outline: none;" id="message" class="form-control input" name="message" rows="7" cols="30" placeholder="How's it going?..."></textarea><br />
-		</div>
-		<div class="text-center center-block">
-			<input style="margin-top: 1.7em;" class="ghost-button-border-color" id="submit_button" type="submit" value="SEND" />
 		</div>
 	</div>
-    </form>-->		
+    </form>		
 </div>
 </div>
 
