@@ -16,6 +16,41 @@
   border: 1px solid #BBB;
   background: #EEE;
 }
+
+/*Form*/
+.forminput input{
+			width: 492px;
+			height: 55px;
+			margin-bottom: 5px;
+			padding: 10px 10px 10px 16px;
+			background: rgba(0,0,0,0.8);
+			border: 1px solid #fff;
+			-moz-box-shadow: 0 5px 0 0 black;
+			-webkit-box-shadow: 0 5px 0 0 black;
+			box-shadow: 0 5px 0 0 black;
+			font-size: 15px;
+			color: black;
+			outline: none;
+}
+.forminput:focus{
+	border-color: rgba(25, 25, 71, 0.8);
+}
+.textareainput textarea{
+	width: 492px;
+	height: 120px;
+	padding: 10px 18px 0 18px;
+	background: white;
+	border: 1px solid #fff;
+	-moz-box-shadow: 0 5px 0 0 black;
+	-webkit-box-shadow: 0 5px 0 0 black;
+	box-shadow: 0 5px 0 0 black;
+	font-size: 15px;
+	color: black;
+	outline: none;
+}
+.textareainput:focus{
+	border-color: rgba(25, 25, 71, 0.8);
+}
 .ribbon {
   position: absolute;
   right: -1px; top: -1px;
