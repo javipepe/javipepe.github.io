@@ -276,7 +276,7 @@ body {
   background: #000 url('http://openwalls.com/image/40547/gray_landscape_1920x1080.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  font: 300 18px/22px "Raleway", sans-serif;
+  font: 300 18px/22px 'Raleway', sans-serif;
 }
 
 /* Typography */
