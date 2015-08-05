@@ -20,7 +20,7 @@
 /*Form*/
 .forminput input{
 			width: 492px;
-			height: 55px;
+			height: 64px;
 			margin-bottom: 5px;
 			padding: 10px 10px 10px 16px;
 			background: rgba(0,0,0,0.8);
@@ -39,7 +39,7 @@
 	width: 492px;
 	height: 120px;
 	padding: 10px 18px 0 18px;
-	background: white;
+	background: rgba(0,0,0,0.8);
 	border: 1px solid #fff;
 	-moz-box-shadow: 0 5px 0 0 black;
 	-webkit-box-shadow: 0 5px 0 0 black;
