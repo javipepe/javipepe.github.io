@@ -273,6 +273,31 @@
               background-color 0.3s ease-in,
               border-color 0.3s ease-in;
 }
+.ghost-button-full-color-send {
+  display: inline-block;
+  width: 100px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+.ghost-button-full-color-send:hover,
+.ghost-button-full-color-send:active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+  -webkit-transition:color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
 
 /*
  * Size Transition Effect
