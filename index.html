@@ -70,12 +70,12 @@
 <script type="text/javascript">
 		var cbutton = document.getElementById('conbut');
 		var ambutton = document.getElementById('ambut');
-		var snbutton = document.getElementById('snbut');
+		//var snbutton = document.getElementById('snbut');
 
 		cbutton.onclick = function() {
 	    var cdiv = document.getElementById('cnt');
 	    var amdiv = document.getElementById('am');
-	    var sndiv = document.getElementById('sn');
+	    //var sndiv = document.getElementById('sn');
 	    if (cdiv.style.display !== 'none') {
 	        cdiv.style.display = 'none';
 	        cbutton.value = 'Contact';
@@ -85,9 +85,9 @@
 	    	amdiv.style.display = 'none';
 	    	ambutton.value = 'About Me';
 	    	ambutton.style.width = '130px';
-	    	sndiv.style.display = 'none';
-	    	snbutton.value = 'Social Networks';
-	    	snbutton.style.width = '200px';
+	    	//sndiv.style.display = 'none';
+	    	//snbutton.value = 'Social Networks';
+	    	//snbutton.style.width = '200px';
 	        cdiv.style.display = 'block';
 	        cbutton.value = 'Hide contact';
 	        cbutton.style.width = '300px';
@@ -96,7 +96,7 @@
 		ambutton.onclick = function() {
 	    var cdiv = document.getElementById('cnt');
 	    var amdiv = document.getElementById('am');
-	    var sndiv = document.getElementById('sn');
+	    //var sndiv = document.getElementById('sn');
 	    if (amdiv.style.display !== 'none') {
 	        amdiv.style.display = 'none';
 	        ambutton.value = 'About Me';
@@ -104,9 +104,9 @@
 	    }
 	    else {
 	    	amdiv.style.display = 'block';
-	    	sndiv.style.display = 'none';
-	    	snbutton.value = 'Social Networks';
-	    	snbutton.style.width = '200px';
+	    	//sndiv.style.display = 'none';
+	    	//snbutton.value = 'Social Networks';
+	    	//snbutton.style.width = '200px';
 	        cdiv.style.display = 'none';
 	        cbutton.value = 'Contact';
 	    	cbutton.style.width = '100px';
@@ -114,7 +114,7 @@
 	        ambutton.style.width = '300px';
 	    }
 		};
-		snbutton.onclick = function() {
+		/*snbutton.onclick = function() {
 	    var cdiv = document.getElementById('cnt');
 	    var amdiv = document.getElementById('am');
 	    var sndiv = document.getElementById('sn');
@@ -134,7 +134,7 @@
 	        snbutton.value = 'Hide Social Networks';
 	        snbutton.style.width = '250px';
 	    }
-		};
+		};*/
 	    
 	    
 	
