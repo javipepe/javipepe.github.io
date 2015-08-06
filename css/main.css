@@ -29,10 +29,10 @@
 			-webkit-box-shadow: 0 5px 0 0 black;
 			box-shadow: 0 5px 0 0 black;
 			font-size: 15px;
-			color: black;
+			color: white;
 			outline: none;
 }
-.forminput:focus{
+.forminput:active{
 	border-color: rgba(25, 25, 71, 0.8);
 }
 .textareainput textarea{
@@ -45,10 +45,10 @@
 	-webkit-box-shadow: 0 5px 0 0 black;
 	box-shadow: 0 5px 0 0 black;
 	font-size: 15px;
-	color: black;
+	color: white;
 	outline: none;
 }
-.textareainput:focus{
+.textareainput:active{
 	border-color: rgba(25, 25, 71, 0.8);
 }
 .ribbon {
