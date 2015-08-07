@@ -25,9 +25,6 @@
 			padding: 10px 10px 10px 16px;
 			background: rgba(0,0,0,0.8);
 			border: 1px solid #fff;
-			-moz-box-shadow: 0 5px 0 0 black;
-			-webkit-box-shadow: 0 5px 0 0 black;
-			box-shadow: 0 5px 0 0 black;
 			font-size: 15px;
 			color: white;
 			outline: none;
