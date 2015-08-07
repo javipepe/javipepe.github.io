@@ -17,6 +17,16 @@
   background: #EEE;
 }
 
+@font-face {
+  font-family: 'minecraftfont';
+  src: url('./font/minecraftfont.eot');
+  src: local('/font/minecraftfont'), url('./font/minecraftfont.woff') format('woff'), url('./font/minecraftfont.ttf') format('truetype');
+}
+
+.mcfont {
+  font-family: 'minecraftfont' !important;
+}
+
 /*Form*/
 .forminput input{
 			width: 492px;
