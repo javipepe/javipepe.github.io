@@ -277,8 +277,8 @@
   display: inline-block;
   width: 100px;
   padding: 8px;
-  color: #fff;
-  background: rgba(255,255,255,0.5);
+  color: black;
+  background: rgba(255,255,255,0.2);
   border: 2px solid #fff;
   text-align: center;
   outline: none;
@@ -290,9 +290,9 @@
 }
 .ghost-button-full-color-send:hover,
 .ghost-button-full-color-send:active {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
-  color: #fff;
+  background-color: white;
+  border-color: white;
+  color: black;
   -webkit-transition:color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
   transition: color 0.3s ease-in,
               background-color 0.3s ease-in,
