@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?Raleway:300" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/circle.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='css/animate.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -19,7 +20,7 @@
 <body class="text-center center-block">
 
 <div style="margin-top: 5.5em;">
-<div class="animated fadeInUpBig">
+<div class="animated fadeInUpBig" style="padding:3em;">
 	<h1 style="font-size: 500%;">JAVIPEPE</h1>
 	
 	<h3 style="font-family: 'Raleway', sans-serif;">Developing and Web Design are my hobbies</h3>
@@ -29,17 +30,17 @@
 	</div>
 </div>
 <div id="font" style="font-family: 'Raleway', sans-serif;">
-<div class="animated fadeInUpBig delay-1">
-	<input id="conbut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="Contact"><br><input id="ambut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="About Me"><!--<input id="snbut" type="button" class="ghost-button-full-color" style="width: 200px;margin-top: 1em;" value="Social Networks">-->
-</div>
+<!--<div class="animated fadeInUpBig delay-1">
+	<input id="conbut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="Contact"><br><input id="ambut" type="button" class="ghost-button-full-color" style="width: 100px;margin-top: 1em;margin-right: 0.5em;" value="About Me"><!--<input id="snbut" type="button" class="ghost-button-full-color" style="width: 200px;margin-top: 1em;" value="Social Networks">
+</div>-->
 
-<div id="am" style="color:black;margin-top:3em;display: none;padding:10em; background-color: rgba(255,255,255, 0.8); border-radius:5px;">
+<div id="am" style="color:black;padding:2em; background: rgba(255,255,255, 0.9);">
+	<h3 style="font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:0.3em">ABOUT ME</h3>
 	I'm javipepe, but friends call me javi. I'm 14 years old and I'm from Spain. I ref for the <a style="color:#f20;" href="https://oc.tc">Overcast Network</a>. I also develop, moderate and ref for the <a style="color: #f20" href="https://avicus.net">Avicus Network</a>. I am fluent in English and in Spanish talking in communication languages, but I also use Java, HTML, CSS, JavaScript, and some C++ in a more "programmed" manner. Feel free to contact me by going into the Contact or Social Networks part.
+
+	<div class="c100 p85 small"><span>Java <h6>85%</h6></span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div><div class="c100 p80 small green"><span>HTML <h6>80%</h6></span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div><div class="c100 p75 small green"><span>CSS <h6>75%</h6></span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div><div class="c100 p85 small green"><span>JS <h6>85%</h6></span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div><div class="c100 p50 small orange"><span>C++ <h6>50%</h6></span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
 </div>
-<div id="sn" style="margin-top: 3em; display: none;">
-	<a style="width: 300px; height: 300px;margin-right: 1em;" href="http://twitter.com/ocnjavipepe"><i onmouseover="this.style.color = '#55acee';" onmouseout="this.style.color = 'white';" style="color: white" class="fa fa-twitter fa-3x"></i></a><a style="width: 300px; height: 300px;margin-right: 1em;" href="http://github.com/javipepe"><i onmouseover="this.style.color = '#8E44AD';" onmouseout="this.style.color = 'white';" style="color: white" class="fa fa-github fa-3x"></i></a><a style="width: 300px; height: 300px;margin-right: 1em;" href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g"><i onmouseover="this.style.color = '#e52d27';" onmouseout="this.style.color = 'white';" style="color: white" class="fa fa-youtube-play fa-3x"></i></a>
-</div>
-<div id="cnt" style="margin-top: 1.5em; display: none;border-radius: 5px;width:100%;" class="contact">
+<div id="cnt" style="width:100%; padding:2em; background: rgba(231, 76, 60,0.9); display: inline-block" class="contact">
 	<h2 style="color:white; border-type: solid; border-color:black; border-width:1px;font-size: 22px;">Drop me a line!</h2>
     <form id="contact_form" action="//formspree.io/javipepeoctc@gmail.com" method="POST" enctype="multipart/form-data">
 	<div class="text-center center-block" style="width:1000px;color:white;">
@@ -64,14 +65,14 @@
 			<input type="hidden" name="_subject" value="[!] javipepe.github.io &raquo; New Form Received" />
 		</div>
 		<div class="text-center center-block">
-				<input class="ghost-button-full-color-send" type="submit" value="Send">
+				<input class="ghost-button-full-color-send" style="color:black;" type="submit" value="Send">
 		</div>
 	</div>
     </form>		
 </div>
 </div>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 		var cbutton = document.getElementById('conbut');
 		var ambutton = document.getElementById('ambut');
 		//var snbutton = document.getElementById('snbut');
@@ -142,6 +143,6 @@
 	    
 	    
 	
-</script>
+</script>-->
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
