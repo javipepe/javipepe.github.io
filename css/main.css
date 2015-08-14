@@ -39,7 +39,8 @@
   border-style: inset;
   width: 4em;
   height: 4em;
-  line-height: 4em;
+  line-height: 2em;
+  text-align: center;
   display: inline-block;
 }
 
@@ -51,7 +52,8 @@
   border-style: inset;
   width: 4em;
   height: 4em;
-  line-height: 4em;
+  line-height: 2em;
+  text-align: center;
   display: inline-block;
 }
 
@@ -63,7 +65,8 @@
   border-style: inset;
   width: 4em;
   height: 4em;
-  line-height: 4em;
+  line-height: 2em;
+  text-align: center;
   display: inline-block;
 }
 
