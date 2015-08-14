@@ -19,33 +19,63 @@
 
 @font-face {
   font-family: 'minecraftfont';
-  src: url('/font/minecraftfont.eot');
-  src: local('/font/minecraftfont'), url('/font/minecraftfont.woff') format('woff'), url('/font/minecraftfont.ttf') format('truetype');
+  src: url('./font/minecraftfont.eot');
+  src: local('/font/minecraftfont'), url('./font/minecraftfont.woff') format('woff'), url('./font/minecraftfont.ttf') format('truetype');
 }
 
 .mcfont {
   font-family: 'minecraftfont' !important;
 }
 
+.wrapper{
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform:    translateY(-50%);
+  -ms-transform:     translateY(-50%);
+  -o-transform:      translateY(-50%);
+  transform:         translateY(-50%);
+}
+.vcenter{
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform:    translateY(-50%);
+  -ms-transform:     translateY(-50%);
+  -o-transform:      translateY(-50%);
+  transform:         translateY(-50%);
+}
+
+.leftdivcontainer{
+  margin-right: 10px;
+}
+.textareacontainer{
+  margin-left: 10px;
+}
 /*Form*/
 .forminput input{
-	height: 4em;
-	margin-bottom: 5px;
-	padding: 10px 10px 10px 16px;
-	background: rgba(0,0,0,0.8);
-	border: 1px solid #fff;
-	font-size: 15px;
-	color: white;
-	outline: none;
+			width: 492px;
+			height: 64px;
+			margin-bottom: 5px;
+			padding: 10px 10px 10px 16px;
+			background: rgba(255,255,255,0.8);
+			border: 1px solid #fff;
+			font-size: 15px;
+			color: white;
+			outline: none;
 }
 .forminput:active{
 	border-color: rgba(25, 25, 71, 0.8);
 }
 .textareainput textarea{
-	width: 30.750em;
-	height: 7.5em;
+	width: 492px;
+	height: 120px;
 	padding: 10px 18px 0 18px;
-	background: rgba(0,0,0,0.8);
+	background: rgba(255,255,255,0.8);
 	border: 1px solid #fff;
 	-moz-box-shadow: 0 5px 0 0 black;
 	-webkit-box-shadow: 0 5px 0 0 black;
@@ -399,6 +429,7 @@ h2 {
 
 /* Media Queries */
 @media (max-width: 420px) {
+
   h1 {
     font-size: 32px;
     line-height: 38px;
@@ -412,4 +443,64 @@ h2 {
     line-height: 20px;
   }
   
+}
+
+// larger than mobile
+@media (min-width: 400px) {
+  .leftdivcontainer{
+    width: 180px;
+    margin-right: 10px;
+  }
+  .textareacontainer{
+    width: 180px;
+    margin-left: 10px;
+  }
+}
+    
+// larger than phablet
+@media (min-width: 550px) {
+  .leftdivcontainer{
+    width: 255px;
+    margin-right: 10px;
+  }
+  .textareacontainer{
+    width: 255px;
+    margin-left: 10px;
+  }  
+}
+    
+// larger than tablet
+@media (min-width: 750px) {
+  .leftdivcontainer{
+    width: 355px;
+    margin-right: 10px;
+  }
+  .textareacontainer{
+    width: 355px;
+    margin-left: 10px;
+  }  
+}
+    
+// Larger than desktop
+@media (min-width: 1000px) {
+  .leftdivcontainer{
+    width: 480px;
+    margin-right: 10px;
+  }
+  .textareacontainer{
+    width: 480px;
+    margin-left: 10px;
+  }  
+}
+    
+// Larger than Desktop HD
+@media (min-width: 1200px) {
+  .leftdivcontainer{
+    width: 580px;
+    margin-right: 10px;
+  }
+  .textareacontainer{
+    width: 580px;
+    margin-left: 10px;
+  }  
 }
