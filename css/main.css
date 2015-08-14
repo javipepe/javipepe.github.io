@@ -17,6 +17,10 @@
   background: #EEE;
 }
 
+.thousand{
+  width: 1000px;
+}
+
 @font-face {
   font-family: 'minecraftfont';
   src: url('./font/minecraftfont.eot');
@@ -449,6 +453,9 @@ h2 {
     width: 180px;
     margin-left: 10px;
   }
+  .thousand{
+    width: 400px;
+  }
 }
     
 // larger than phablet
@@ -461,6 +468,9 @@ h2 {
     width: 255px;
     margin-left: 10px;
   }  
+  .thousand{
+    width: 550px;
+  }
 }
     
 // larger than tablet
@@ -472,6 +482,9 @@ h2 {
   .textareacontainer{
     width: 355px;
     margin-left: 10px;
+  }
+  .thousand{
+    width: 750px;
   }  
 }
     
@@ -484,7 +497,11 @@ h2 {
   .textareacontainer{
     width: 480px;
     margin-left: 10px;
-  }  
+  }
+  .thousand{
+    width: 1000px;
+  }
+
 }
     
 // Larger than Desktop HD
