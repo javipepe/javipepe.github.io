@@ -36,10 +36,11 @@
   border-color: white;
   border-width: 2px;
   border-radius: 50%;
+  border-style: inset;
   width: 4em;
   height: 4em;
   line-height: 4em;
-  display: none;
+  display: inline-block;
 }
 
 .gitcircle{
@@ -47,10 +48,11 @@
   border-color: white;
   border-width: 2px;
   border-radius: 50%;
+  border-style: inset;
   width: 4em;
   height: 4em;
   line-height: 4em;
-  display: none;
+  display: inline-block;
 }
 
 .ytcircle{
@@ -58,10 +60,11 @@
   border-color: white;
   border-width: 2px;
   border-radius: 50%;
+  border-style: inset;
   width: 4em;
   height: 4em;
   line-height: 4em;
-  display: none;
+  display: inline-block;
 }
 
 .wrapper{
