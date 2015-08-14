@@ -31,6 +31,39 @@
   font-family: 'minecraftfont' !important;
 }
 
+.twittercircle{
+  background: #55acee;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  display: none;
+}
+
+.gitcircle{
+  background: #8E44AD;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  display: none;
+}
+
+.ytcircle{
+  background: #e52d27;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  display: none;
+}
+
 .wrapper{
   background: rgba(0,0,0,0.5);
   position: absolute;
