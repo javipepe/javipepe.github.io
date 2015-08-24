@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='css/animate.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="icon" type="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png" href="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png">
 
 	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
@@ -34,7 +35,7 @@
 
 	<div class="wrapper">
 
-	<a data-toggle="modal" role="button" href="#contact"><div class="triangle-topright"><i onmouseover="this.style.color = '#ecf0f1';" onmouseout="this.style.color = 'black';" class="fa fa-envelope fa-2x"></i></div></a>
+	<a data-toggle="modal" role="button" href="#contact"><div class="triangle-topright"><i onmouseover="this.style.color = '#e74c3c';" onmouseout="this.style.color = 'white';" class="fa fa-envelope fa-2x"></i></div></a>
 
 	<div style="position: absolute;
 	top: 50%;
@@ -69,25 +70,31 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<button style="color:red" type="button" class="close" data-dismiss="modal">&times;</button>
 								<h4 class="modal-title">Get in touch</h4>
 							</div>
-							<div class="modal-body">
-						    <form id="contact_form" action="//formspree.io/me@javipepe.pw" method="POST" enctype="multipart/form-data">
-										<div class="entry row">
-												<label for="name">NAME</label>
-												<input id="name" type="text" name="name" placeholder="John Appleased">
-										</div>
-										<div class="entry row">
-												<label for="email">EMAIL</label>
-												<input id="email" type="email" name="e-mail" placeholder="me@javipepe.pw">
-										</div>
-										<div class="entry row">
-												<label for="name">MESSAGE</label>
-												<textarea id="message" type="text" name="message" cols="30" rows="7" placeholder="Salut Javi...">
-										</div>
-						    </form>
-							</div>
+							<form id="contact_form" action="//formspree.io/me@javipepe.pw" method="POST" enctype="multipart/form-data">
+								<div class="modal-body">
+											<div class="entry row">
+													<label for="name">NAME</label><br>
+													<input id="name" type="text" name="name" placeholder="John Appleased">
+											</div>
+											<div class="entry row">
+													<label for="email">EMAIL</label><br>
+													<input id="email" type="email" name="e-mail" placeholder="me@javipepe.pw">
+											</div>
+											<div class="entry row">
+													<label for="name">MESSAGE</label><br>
+													<textarea id="message" type="text" name="message" cols="30" rows="7" placeholder="Salut Javi..."></textarea>
+											</div>
+
+								</div>
+								<div class="modal-footer">
+
+										<input type="submit" value="Send &raquo;" class="btn btn-info btn-large">
+
+								</div>
+							</form>
 						</div>
 					</div>
 

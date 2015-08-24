@@ -151,21 +151,18 @@
 }
 .triangle-topright:before {
     content:'';
-    border-top: 70px solid rgba(231, 76, 60, 0.6);
+    border-top: 70px solid rgba(0,0,0, 0.5);
     border-left: 70px solid transparent;
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.triangle-topright:hover,
-.triangle-topright:active{
-  border-top-color: #ecf0f1;
-}
 
 .triangle-topright i{
   position: fixed;
   display: block;
+  color:white;
   top: 0;
   right: 0;
   margin-top: 5px;
@@ -174,15 +171,17 @@
 
 .entry{
   margin: 10px;
+  display: block;
 }
 .entry label{
   float: left;
   text-align: left;
   font-size: 12px;
+  margin-left: 15px;
 }
 
 .entry input{
-  width: 85%;
+  width: 95%;
   height: 54px;
   margin-bottom: 5px;
   padding: 10px 10px 10px 16px;
@@ -193,12 +192,13 @@
   border-radius: 0px;
 }
 
-.entry input:active{
+.entry input:active,
+.entry input:focus{
   border-color: rgba(25, 25, 71, 0.8);
 }
 
 .entry textarea{
-  width: 85%;
+  width: 95%;
   height: 15em;
   margin-bottom: 5px;
   padding: 10px 10px 10px 16px;
@@ -209,7 +209,8 @@
   border-radius: 0px;
 }
 
-.entry input:active{
+.entry textarea:active,
+.entry textarea:focus{
   border-color: rgba(25, 25, 71, 0.8);
 }
 
