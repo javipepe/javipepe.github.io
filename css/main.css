@@ -87,7 +87,7 @@
 
 .social{
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 .social a{
@@ -177,6 +177,10 @@
   right: 0;
   margin-top: 5px;
   margin-right: 5px;
+}
+
+.triangle-topright i:hover{
+  color: #e74c3c;
 }
 
 .entry{
