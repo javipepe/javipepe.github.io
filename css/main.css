@@ -10,81 +10,11 @@
   vertical-align: baseline;
 }
 
-.box {
-  width: 200px; height: 300px;
-  position: relative;
-  border: 1px solid #BBB;
-  background: #EEE;
-}
-
-.thousand{
-  width: 1000px;
-}
-
-@font-face {
-  font-family: 'minecraftfont';
-  src: url('./font/minecraftfont.eot');
-  src: local('/font/minecraftfont'), url('./font/minecraftfont.woff') format('woff'), url('./font/minecraftfont.ttf') format('truetype');
-}
-
-.mcfont {
-  font-family: 'minecraftfont' !important;
-}
-
-.twittercircle{
-  background: #55acee;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 50%;
-  border-style: inset;
-  width: 4em;
-  height: 4em;
-  line-height: 2em;
-  text-align: center;
-  display: inline-block;
-}
-
-.gitcircle{
-  background: #8E44AD;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 50%;
-  border-style: inset;
-  width: 4em;
-  height: 4em;
-  line-height: 2em;
-  text-align: center;
-  display: inline-block;
-}
-
-.ytcircle{
-  background: #e52d27;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 50%;
-  border-style: inset;
-  width: 4em;
-  height: 4em;
-  line-height: 2em;
-  text-align: center;
-  display: inline-block;
-}
-
 .wrapper{
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.69);
   position: absolute;
   height: 100%;
   width: 100%;
-}
-.vcenter{
-  display: block;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform:    translateY(-50%);
-  -ms-transform:     translateY(-50%);
-  -o-transform:      translateY(-50%);
-  transform:         translateY(-50%);
 }
 
 .leftdivcontainer{
@@ -95,226 +25,192 @@
 }
 /*Form*/
 .forminput input{
-			width: 492px;
-			height: 64px;
+			width: 15em;
+			height: 50px;
 			margin-bottom: 5px;
 			padding: 10px 10px 10px 16px;
 			background: rgba(255,255,255,0.8);
-			border: 1px solid #fff;
+			border: 1px solid black;
 			font-size: 15px;
-			color: white;
 			outline: none;
+      -moz-box-shadow: 0 0 1em #ddd;
+      -webkit-box-shadow: 0 0 1em #ddd;
+      box-shadow: 0 0 1em #ddd;
 }
 .forminput:active{
 	border-color: rgba(25, 25, 71, 0.8);
 }
 .textareainput textarea{
-	width: 492px;
-	height: 120px;
+	width: 15em;
+	height: 7em;
 	padding: 10px 18px 0 18px;
 	background: rgba(255,255,255,0.8);
-	border: 1px solid #fff;
-	-moz-box-shadow: 0 5px 0 0 black;
-	-webkit-box-shadow: 0 5px 0 0 black;
-	box-shadow: 0 5px 0 0 black;
+	border: 1px solid black;
+  -moz-box-shadow: 0 0 1em #ddd;
+  -webkit-box-shadow: 0 0 1em #ddd;
+  box-shadow: 0 0 1em #ddd;
 	font-size: 15px;
-	color: white;
 	outline: none;
 }
 .textareainput:active{
 	border-color: rgba(25, 25, 71, 0.8);
 }
-.ribbon {
-  position: absolute;
-  right: -1px; top: -1px;
-  z-index: 1;
-  overflow: hidden;
-  width: 100px; height: 100px;
-  text-align: right;
+
+/*stuffs*/
+
+.orange{
+  color: #16a085;
 }
-.ribbon span {
-  font-size: 10px;
-  font-weight: bold;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  background: #79A70A;
-  background: linear-gradient(#C90202 0%, #5E1818 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px; right: -21px;
-}
-.ribbon span::before {
-  content: "";
-  position: absolute; left: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid #5E1818;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #5E1818;
-}
-.ribbon span::after {
-  content: "";
-  position: absolute; right: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 3px solid #5E1818;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #5E1818;
+.mainname{
+  color:white;
+  font-size: 500%;
 }
 
-/*
- * Basic Ghost Button
- */
+.blocks{
+  margin-top: 4.5em;
+}
+
+.desc{
+  color:white;font-family: 'Raleway', sans-serif;"
+  display: block;
+}
+
+.social{
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+.social a{
+  width: 300px;
+  height: 300px;
+  margin-right: 1em;
+}
+
+.social i{
+  color: black;
+}
 
 .contact{
-    background: transparent;
-    
-}
-
-.ghost-button {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 1px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-.ghost-button:hover,
-.ghost-button:active {
-  background-color: #fff;
-  color: #000;
-}
-
-/*
- * Rounded Corners
- */
-.ghost-button-rounded-corners {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-.ghost-button-rounded-corners:hover,
-.ghost-button-rounded-corners:active {
-  background-color: #fff;
-  color: #000;
-}
-
-/*
- * Simple Transition Effect
- */
-.ghost-button-transition {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  transition: background-color 0.2s ease-out,
-              color 0.2s ease-out;
-}
-.ghost-button-transition:hover,
-.ghost-button-transition:active {
-  background-color: #fff;
-  color: #000;
-  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
-  transition: background-color 0.3s ease-in,
-              color 0.3s ease-in;
-}
-
-/*
- * Thick Border
- */
-.ghost-button-thick-border {
-  display: inline-block;
-  width: 200px;
-  font-weight: bold;
-  padding: 8px;
-  color: #fff;
-  border: 3px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  transition: background-color 0.2s ease-out,
-              color 0.2s ease-out;
-}
-.ghost-button-thick-border:hover,
-.ghost-button-thick-border:active {
-  background-color: #fff;
-  color: #000;
-  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
-  transition: background-color 0.3s ease-in,
-              color 0.3s ease-in;
-}
-
-/*
- * Semi-Transparent Fade
- */
-.ghost-button-semi-transparent {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out,
-              border-color 0.2s ease-out;
-}
-.ghost-button-semi-transparent:hover,
-.ghost-button-semi-transparent:active {
-  background-color: #fff; /* fallback */
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: #fff; /* fallback */
-  border-color: rgba(255, 255, 255, 0.4);
-  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
-  transition: background-color 0.3s ease-in,
-              border-color 0.3s ease-in;
-}
-
-/*
- * Border Color Fade
- * Blue: #66d8ed
- */
-.ghost-button-border-color {
   background: transparent;
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: border-color 0.3s ease-out, color 0.3s ease-out;
-  transition: border-color 0.3s ease-out,
-              color 0.3s ease-out;
+  padding: 2em;
+  color: black;
+  font-family: 'Raleway';
 }
-.ghost-button-border-color:hover,
-.ghost-button-border-color:active {
-  color: #66d8ed;
-  border-color: #66d8ed;
-  -webkit-transition: border-color 0.4s ease-in, color 0.4s ease-in;
-  transition: border-color 0.4s ease-in,
-              color 0.4s ease-in;
+
+.insided-center{
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.overflowhid{
+  overflow: hidden;
+}
+
+.overflowhid label{
+  float: left;
+}
+
+.contact h2{
+  color: black;
+  font-size: 22px;
+}
+
+.fle{
+  float: left;
+}
+
+/*cursor*/
+
+.typed-cursor{
+    opacity: 0;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+
+}
+@keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+@-moz-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+
+.triangle-topright {
+    position: relative;
+    color:black;
+    -webkit-filter: drop-shadow(12px 12px 20px #7f8c8d);
+}
+.triangle-topright:before {
+    content:'';
+    border-top: 70px solid rgba(231, 76, 60, 0.6);
+    border-left: 70px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.triangle-topright:hover,
+.triangle-topright:active{
+  border-top-color: #ecf0f1;
+}
+
+.triangle-topright i{
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.entry{
+  margin: 10px;
+}
+.entry label{
+  float: left;
+  text-align: left;
+  font-size: 12px;
+}
+
+.entry input{
+  width: 85%;
+  height: 54px;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 16px;
+  background: white;
+  border: 3px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  border-radius: 0px;
+}
+
+.entry input:active{
+  border-color: rgba(25, 25, 71, 0.8);
+}
+
+.entry textarea{
+  width: 85%;
+  height: 15em;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 16px;
+  background: white;
+  border: 3px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  border-radius: 0px;
+}
+
+.entry input:active{
+  border-color: rgba(25, 25, 71, 0.8);
 }
 
 /*
@@ -323,7 +219,7 @@
  */
 .ghost-button-full-color {
   display: inline-block;
-  width: 100px;
+  width: 10em;
   padding: 8px;
   color: #fff;
   background-color: transparent;
@@ -338,9 +234,10 @@
 }
 .ghost-button-full-color:hover,
 .ghost-button-full-color:active {
-  background-color: #9363c4;
+  background-color: white;
   border-color: #9363c4;
-  color: #fff;
+  color: black;
+  text-decoration: none;
   -webkit-transition:color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
   transition: color 0.3s ease-in,
               background-color 0.3s ease-in,
@@ -372,37 +269,6 @@
               border-color 0.3s ease-in;
 }
 
-/*
- * Size Transition Effect
- */
-.ghost-button-size-transition {
-  display: inline-block;
-  width: 200px;
-  height: 25px;
-  line-height: 25px;
-  margin: 0 auto;
-  padding: 8px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: width 0.3s ease-out, height 0.3s ease-out, line-height 0.3s ease-out;
-  transition: width 0.3s ease-out,
-              height 0.3s ease-out,
-              line-height 0.3s ease-out;
-}
-.ghost-button-size-transition:hover,
-.ghost-button-size-transition:active {
-  width: 220px;
-  height: 45px;
-  line-height: 45px;
-  -webkit-transition: width 0.1s ease-in, height 0.1s ease-in, line-height 0.1s ease-in;
-  transition: width 0.1s ease-in,
-              height 0.1s ease-in,
-              line-height 0.1s ease-in;
-}
-
 /* Basic */
 body {
   color: #fff;
@@ -429,39 +295,11 @@ h2 {
   line-height: 33px;
 }
 
-/* Layout */
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: 50px auto 50px auto;
-  text-align: center;
-}
 
 .delay-1{
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
-}
-
-.custom-triangle{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 30px 20px 30px;
-  border-color: transparent transparent #494c4f transparent;
-  margin-bottom: 0px;
-
-}
-
-.speech-bubble{
-  border: 2px solid #494c4f;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.2);
-  font-family: 'Roboto', sans-serif;
-  display: inline-block;
-  margin-top:0px;
-  padding: 100px 100px 100px 100px;
-}
 }
 
 /* Media Queries */
@@ -479,7 +317,7 @@ h2 {
     font-size: 16px;
     line-height: 20px;
   }
-  
+
 }
 
 // larger than mobile
@@ -496,7 +334,7 @@ h2 {
     width: 400px;
   }
 }
-    
+
 // larger than phablet
 @media (min-width: 550px) {
   .leftdivcontainer{
@@ -506,12 +344,12 @@ h2 {
   .textareacontainer{
     width: 255px;
     margin-left: 10px;
-  }  
+  }
   .thousand{
     width: 550px;
   }
 }
-    
+
 // larger than tablet
 @media (min-width: 750px) {
   .leftdivcontainer{
@@ -524,9 +362,9 @@ h2 {
   }
   .thousand{
     width: 750px;
-  }  
+  }
 }
-    
+
 // Larger than desktop
 @media (min-width: 1000px) {
   .leftdivcontainer{
@@ -542,7 +380,7 @@ h2 {
   }
 
 }
-    
+
 // Larger than Desktop HD
 @media (min-width: 1200px) {
   .leftdivcontainer{
@@ -552,5 +390,5 @@ h2 {
   .textareacontainer{
     width: 580px;
     margin-left: 10px;
-  }  
+  }
 }

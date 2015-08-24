@@ -5,71 +5,96 @@
 	<title>Javi</title>
 	<meta name="description" content="Javipepe's webpage">
 	<meta name="author" content="Javipepe">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/typed.js"></script>
+	<script>
+  $(function(){
+      $(".typerino").typed({
+        strings: ["^900&lt;p&gt;I love &lt;b&gt;developing&lt;/b&gt; and &lt;b&gt;web design&lt;/b&gt;&lt;/p>"],
+        typeSpeed: 6
+      });
+			$(".typerino").delay(6500).fadeOut();
+			$(".realcode").delay(7000).fadeIn();
+
+  });
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?Raleway:300" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='css/animate.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="icon" type="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png" href="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png">
 
 	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-	
+
 </head>
-<body class="text-center center-block">
+<body style="position:relative;" class="text-center center-block">
 
 	<div class="wrapper">
-		
-			<div style="margin-top: 4.5em;">
-				<div class="animated fadeInUpBig" style="margin-bottom:4em;">
-					<h1 style="color:white;font-size: 500%;">JAVI</h1>
-					
-					<h3 style="color:white;font-family: 'Raleway', sans-serif;">I love developing and web design</h3>
-					
-					<!--<div id="sn" style="margin-top: 1em;" class="animated bounceInLeft delay-1">
-						<a id="twittercircle" class="twittercircle" style="margin-right: 3em;" href="http://twitter.com/ocnjavipepe"><i onmouseover="this.style.color = 'white'; var tcircle = Document.getElementById('twittercircle'); tcircle.style.display = 'block';" onmouseout="this.style.color = 'gray';var tcircle = Document.getElementById('twittercircle'); tcircle.style.display = 'none';" style="color: gray" class="fa fa-twitter fa-2x"></i></a><a class="gitcircle" id="gitcircle" style="margin-right: 3em;" href="http://github.com/javipepe"><i onmouseover="this.style.color = 'white'; var gcircle = Document.getElementById('gitcircle'); gitcircle.style.display = 'block';" onmouseout="this.style.color = 'gray'; var gcircle = Document.getElementById('gitcircle'); gitcircle.style.display = 'none';" style="color: gray" class="fa fa-github fa-2x"></i></a><a class="ytcircle" id="ytcircle" href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g"><i onmouseover="this.style.color = 'white'; var ycircle = Document.getElementById('ytcircle'); ytcircle.style.display = 'block';" onmouseout="this.style.color = 'gray';var ycircle = Document.getElementById('ytcircle'); ytcircle.style.display = 'none';" style="color: gray" class="fa fa-youtube-play fa-2x"></i></a>
-					</div>-->
-					<div id="sn" style="margin-top: 1em;" class="animated bounceInLeft delay-1">
-						<a style="width: 300px; height: 300px;margin-right: 1em;" href="http://twitter.com/ocnjavipepe"><i onmouseover="this.style.color = '#55acee';" onmouseout="this.style.color = 'black';" style="color: black" class="fa fa-twitter fa-3x"></i></a><a style="width: 300px; height: 300px;margin-right: 1em;" href="http://github.com/javipepe"><i onmouseover="this.style.color = '#8E44AD';" onmouseout="this.style.color = 'black';" style="color: black" class="fa fa-github fa-3x"></i></a><a style="width: 300px; height: 300px;margin-right: 1em;" href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g"><i onmouseover="this.style.color = '#e52d27';" onmouseout="this.style.color = 'black';" style="color: black" class="fa fa-youtube-play fa-3x"></i></a>
+
+	<a data-toggle="modal" href="#contact"><div class="triangle-topright"><i onmouseover="this.style.color = '#ecf0f1';" onmouseout="this.style.color = 'black';" class="fa fa-envelope fa-2x"></i></div></a>
+
+	<div style="position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 30%;
+	width: 80%;
+	margin: -15% 0 0 -40%" >
+
+			<div class="blocks">
+				<div class="animated fadeInUpBig">
+					<h1 class="mainname">JAVI</h1>
+
+					<h3 class="desc">
+						<span class="typerino"></span><span class="realcode" style="display:none;">I love <b>developing</b> and <b>web design</b></span>
+					</h3>
+
+					<div class="social animated bounceInLeft delay-1">
+						<a href="http://twitter.com/ocnjavipepe">
+							<i style="color:#55acee;" class="twitter fa fa-twitter fa-3x"></i>
+						</a>
+						<a href="http://github.com/javipepe">
+							<i style="color: #8E44AD" class="fa fa-github fa-3x"></i>
+						</a>
+						<a href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g">
+							<i style="color: #e52d27" class="fa fa-youtube-play fa-3x"></i>
+						</a>
 					</div>
-		
-				
 				</div>
 
 
-				<div id="cnt" style="padding:2em;" class="contact animated fadeInUpBig">
-					<h2 style="color:white; border-type: solid; border-color:black; border-width:1px;font-size: 22px;">Drop me a line!</h2>
-				    <form id="contact_form" action="//formspree.io/me@javipepe.pw" method="POST" enctype="multipart/form-data">
-					<div class="thousand" style="margin-right:auto; margin-left:auto;">
-						<!--Nowtwo divs that will be at the left 20 px margin inbetween left and right-->
-						<div style="overflow:hidden;">
-							<div style="float:left;" class="leftdivcontainer">
-								<!--80px height. 16 bottom margin-->
-								<div class="forminput">
-									<label style="color:white;font-weight: bold; text-align: left;" for="name">NAME</label>
-									<input id="name" name="name" type="text" placeholder="John Appleased" class="form-control input" value="" size="30">
-								</div>
-								<div class="forminput" style="margin-top: 5px; margin-bottom: 0px">
-									<label style="color:white;font-weight: bold;text-align: left;" for="email">EMAIL</label>
-									<input id="email" name="email" type="email" placeholder="support@javi.io" class="form-control input" value="" size="30">
-								</div>
+				<div class="contact text-center center-block animated modal fade" id="contact" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Get in touch</h4>
 							</div>
-							<div class="textareainput textareacontainer" style="margin-right:0px; overflow:hidden;">
-								<label style="color:white;font-weight: bold;text-align: left;" for="message">MESSAGE</label>
-								<textarea id="message" class="form-control input" name="message" rows="7" cols="30" placeholder="So it turned out that..."></textarea>
+							<div class="modal-body">
+						    <form id="contact_form" action="//formspree.io/me@javipepe.pw" method="POST" enctype="multipart/form-data">
+										<div class="entry row">
+												<label for="name">NAME</label>
+												<input id="name" type="text" name="name" placeholder="John Appleased">
+										</div>
+										<div class="entry row">
+												<label for="email">EMAIL</label>
+												<input id="email" type="email" name="e-mail" placeholder="me@javipepe.pw">
+										</div>
+										<div class="entry row">
+												<label for="name">MESSAGE</label>
+												<textarea id="message" type="text" name="message" cols="30" rows="7" placeholder="Salut Javi...">
+										</div>
+						    </form>
 							</div>
-							<input type="hidden" name="_next" value="/thanks.html" />
-							<input type="hidden" name="_subject" value="[!] javipepe.github.io &raquo; New Form Received" />
-						</div>
-						<div class="text-center center-block" style="margin-top: 1em;">
-								<input class="ghost-button-full-color-send" style="color:black;" type="submit" value="Send">
 						</div>
 					</div>
-				    </form>		
 
 				</div>
 			</div>
-		
+
 	</div>
+</div>
 </body>
 </html>
