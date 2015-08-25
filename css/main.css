@@ -435,7 +435,7 @@ h2 {
   }
 }
 
-// Larger than desktop
+// Larger than desktops
 @media (max-width: 1000px) {
   .leftdivcontainer{
     width: 480px;
