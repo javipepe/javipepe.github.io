@@ -6,8 +6,6 @@
 	<meta name="description" content="Javipepe's webpage">
 	<meta name="author" content="Javipepe">
 	<meta name="theme-color" content="#ddd">
-	<link href="http://javipepe.pw/css/theme.css" rel="stylesheet" type="text/css">
-	<script src="http://javipepe.pw/js/rainbow-custom.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?Raleway:300" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -43,8 +41,14 @@
   </style>
 </head>
 <body class="animate fadeInBig">
+	
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js" type="text/javascript"></script>
+
 <pre>
-  <code data-language="java" class="rainbow">
   URL url;
   URLConnection uc;
   StringBuilder parsedContentFromUrl = new StringBuilder();
@@ -60,7 +64,6 @@
   while ((ch = in.read()) != -1) {
     parsedContentFromUrl.append((char) ch);
   }
-  </code>
 </pre>
 </body>
 </html>
