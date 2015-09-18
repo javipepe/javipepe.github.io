@@ -33,7 +33,7 @@
   color: black !important;
 }
 .syntaxhighlighter .gutter {
-  color: #ddd !important;
+  color: #5E5E5E !important;
 }
 .syntaxhighlighter .gutter .line {
       border-right: 5px solid white !important;
@@ -59,6 +59,12 @@
 .syntaxhighlighter.collapsed .toolbar a:hover {
   color: red !important;
 }
+
+.command_help{
+  background: transparent !important;
+  text-decoration:none;
+}
+
 .syntaxhighlighter .toolbar {
       color: #ddd !important;
       background: white !important;
