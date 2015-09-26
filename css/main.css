@@ -63,10 +63,11 @@
 }
 
 .foot div{
-   margin-top:15px;
+   margin-top:10px;
 }
-.foot i{
-   color: #bdc3c7;
+
+.foot div:hover{
+   color:#e74c3c;	
 }
 .textareainput textarea{
 	width: 15em;
