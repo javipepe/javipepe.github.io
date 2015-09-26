@@ -35,20 +35,35 @@
 
 /*Form*/
 .forminput input{
-			width: 15em;
-			height: 50px;
-			margin-bottom: 5px;
-			padding: 10px 10px 10px 16px;
-			background: rgba(255,255,255,0.8);
-			border: 1px solid black;
-			font-size: 15px;
-			outline: none;
+	width: 15em;
+	height: 50px;
+	margin-bottom: 5px;
+	padding: 10px 10px 10px 16px;
+	background: rgba(255,255,255,0.8);
+	border: 1px solid black;
+	font-size: 15px;
+	outline: none;
       -moz-box-shadow: 0 0 1em #ddd;
       -webkit-box-shadow: 0 0 1em #ddd;
       box-shadow: 0 0 1em #ddd;
 }
 .forminput:active{
 	border-color: rgba(25, 25, 71, 0.8);
+}
+
+.foot{
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:200px;
+   width:100%;
+   background: rgba(52, 73, 94,0.75);
+   color:#bdc3c7;
+   font-family: 'Raleway', sans-serif;
+}
+
+.foot img{
+   color: #bdc3c7;
 }
 .textareainput textarea{
 	width: 15em;
@@ -86,7 +101,8 @@
 }
 
 .descm{
-  color:white;font-family: 'Raleway', sans-serif;"
+  color:white;
+  font-family: 'Raleway', sans-serif;
   display: block;
 }
 
