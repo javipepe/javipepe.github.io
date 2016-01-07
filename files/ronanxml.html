@@ -1,0 +1,223 @@
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title>JaviFiles - urlfetch</title>
+	<meta name="description" content="Javipepe's webpage">
+	<meta name="author" content="Javipepe">
+	<meta name="theme-color" content="#ddd">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://fonts.googleapis.com/css?Raleway:300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://javipepe.pw/css/animate.css' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png" href="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png">
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Raleway);
+    *{
+      font-family: 'Raleway', sans-serif;"
+    }
+    
+    .syntaxhighlighter .toolbar {
+      color: white !important;
+      background: white !important;
+      border: none !important;
+     }
+     
+     .syntaxhighlighter .gutter .line {
+      border-right: 5px solid white !important;
+     }
+
+    .box{
+      width:400px;
+      height:150px;
+      background: rgba(0,0,0,0.6);
+      color:white;
+      top:0;
+      right:0;
+      margin-top:3px;
+      margin-right: 3px;
+      position:relative;
+    }
+    
+    .box a{
+      text-decoration:none;
+      color:white;
+    }
+    
+    .box a:hover{
+      text-decoration:underline;
+      color:#9b59b6;
+      text-size:20px;
+    }
+  </style>
+</head>
+<body class="animate fadeInBig">
+	
+<link href="http://javipepe.pw/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js" type="text/javascript"></script>
+
+<h2>XML file for <a href="https://oc.tc/forums/topics/5671d96867d5225c38000cc2">this map</a></h2>
+<hr>
+<pre class="brush: xml">
+  <map proto="1.3.6">
+<name>Rond de Vuurtoren</name>
+<version>1.0.0</version>
+<objective>
+Break the obsidian from all of the three foe teams' monuments.
+</objective>
+<authors>
+    <author uuid="8504073a-0e46-4909-8797-348fcc8d3768" contribution="Author"/>
+    <!--  RonanSchuilt  -->
+</authors>
+<contributors>
+    <contributor uuid="fe3608b7-d105-4029-8800-34b3147065b6" contribution="WorldEdit"/>
+    <!--  rockymine  -->
+    <contributor uuid="73a045a4-1383-4ece-b3a6-1179469d973e" contribution="Map Design"/>
+    <!--  Auron_Ignifer  -->
+    <contributor uuid="c2848337-b526-4db0-9130-fabd0a5c7cfb" contribution="Map Design"/>
+    <!--  Rasta_Jol  -->
+</contributors>
+<teams>
+    <team id="lime" color="green" max="12">Lime</team>
+    <team id="green" color="dark_green" max="12">Green</team>
+    <team id="light_purple" color="light_purple" max="12">Pink</team>
+    <team id="purple" color="dark_purple" max="12">Purple</team>
+</teams>
+<maxbuildheight>31</maxbuildheight>
+<timelock>off</timelock>
+<spawns>
+    <spawn team="lime" kit="lime" yaw="-90">
+        <block id="spawn_point_light_green">-117,15,0</block>
+    </spawn>
+    <spawn team="green" kit="green" yaw="90">
+        <block id="spawn_point_green">117,15,0</block>
+    </spawn>
+    <spawn team="pink" kit="light_purple" yaw="180">
+        <block id="spawn_point_light_purple">0,15,117</block>
+    </spawn>
+    <spawn team="purple" kit="purple" yaw="0">
+        <block id="spawn_point_purple">0,15,-117</block>
+    </spawn>
+    <default yaw="90">
+        <cylinder base="0,30,0" radius="3" height="4"/>
+    </default>
+</spawns>
+<destroyables completion="100%" materials="obsidian">
+    <!--  lime monuments  -->
+    <destroyable name="Green monument" owner="lime">
+        <cuboid min="-82,20,1" max="-81,22,0"/>
+    </destroyable>
+    <destroyable name="Pink monument" owner="lime">
+        <cuboid min="-88,20,31" max="-89,22,32"/>
+    </destroyable>
+    <destroyable name="Purple monument" owner="lime">
+        <cuboid min="-88,20,-30" max="-89,22,-31"/>
+    </destroyable>
+    <!--  green monuments  -->
+    <destroyable name="Lime monument" owner="green">
+        <cuboid min="83,20,0" max="82,22,1"/>
+    </destroyable>
+    <destroyable name="Purple monument" owner="green">
+        <cuboid min="90,20,-30" max="89,22,-31"/>
+    </destroyable>
+    <destroyable name="Pink monument" owner="green">
+        <cuboid min="89,20,31" max="90,22,32"/>
+    </destroyable>
+    <!--  pink monuments  -->
+    <destroyable name="Lime monument" owner="pink">
+        <cuboid min="-31,20,89" max="-30,22,90"/>
+    </destroyable>
+    <destroyable name="Green monument" owner="pink">
+        <cuboid min="32,20,90" max="31,22,89"/>
+    </destroyable>
+    <destroyable name="Purple monument" owner="pink">
+        <cuboid min="1,20,83" max="0,22,82"/>
+    </destroyable>
+    <!--  purple monuments  -->
+    <destroyable name="Lime monument" owner="purple">
+        <cuboid min="-31,20,-88" max="-30,22,-89"/>
+    </destroyable>
+    <destroyable name="Green monument" owner="purple">
+        <cuboid min="32,20,-88" max="31,22,-89"/>
+    </destroyable>
+    <destroyable name="Pink monument" owner="purple">
+        <cuboid min="0,20,-81" max="1,22,-82"/>
+    </destroyable>
+</destroyables>
+<regions>
+    <apply block-place="deny-all" block-break="only-diamond" message="`7You may only break the `6diamond blocks `7at the observers' spawn island!">
+        <circle center="0.5,-0.5" radius="20.5"/>
+    </apply>
+    <apply block="deny-all" message="You may not build outside the playable region!">
+        <negative name="playable">
+            <circle center="0.5,0.5" radius="150"/>
+        </negative>
+    </apply>
+</regions>
+<kits>
+    <kit name="spawn">
+        <item slot="0">stone sword</item>
+        <item slot="1">bow</item>
+        <item slot="28" amount="32">arrow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="3">stone axe</item>
+        <item slot="4" amount="64">log</item>
+        <item slot="8" amount="32">salmon</item>
+    </kit>
+    <kit name="lime" parents="spawn">
+        <helmet color="light_green">leather helmet</helmet>
+        <chestplate color="light_green">leather chestplate</chestplate>
+        <leggings color="light_green">leather leggings</leggings>
+        <boots color="light_green">leather boots</boots>
+    </kit>
+    <kit name="green" parents="spawn">
+        <helmet color="green">leather helmet</helmet>
+        <chestplate color="green">leather chestplate</chestplate>
+        <leggings color="green">leather leggings</leggings>
+        <boots color="green">leather boots</boots>
+    </kit>
+    <kit name="light_purple" parents="spawn">
+        <helmet color="light_purple">leather helmet</helmet>
+        <chestplate color="light_purple">leather chestplate</chestplate>
+        <leggings color="light_purple">leather leggings</leggings>
+        <boots color="light_purple">leather boots</boots>
+    </kit>
+    <kit name="purple" parents="spawn">
+        <helmet color="purple">leather helmet</helmet>
+        <chestplate color="purple">leather chestplate</chestplate>
+        <leggings color="purple">leather leggings</leggings>
+        <boots color="purple">leather boots</boots>
+    </kit>
+</kits>
+<toolrepair>
+    <tool>stone sword</tool>
+    <tool>diamond pickaxe</tool>
+    <tool>iron axe</tool>
+    <tool>bow</tool>
+</toolrepair>
+<itemremove>
+    <item>arrow</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>log</item>
+    <item>salmon</item>
+    <item>obsidian</item>
+    <item>string</item>
+    <item>seeds</item>
+    <item>beacon</item>
+</itemremove>
+<tnt>
+    <instantignite>on</instantignite>
+    <licensing>off</licensing>
+    <friendly-defuse>off</friendly-defuse>
+    <blockdamage>off</blockdamage>
+</tnt>
+</map>
+</pre>
+</body>
+</html>
