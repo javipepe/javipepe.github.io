@@ -437,9 +437,6 @@ h2 {
   .thousand{
     width: 550px;
   }
-  .vcenter{
-    top: 17%;
-  }
 }
 
 // larger than tablet
@@ -454,9 +451,6 @@ h2 {
   }
   .thousand{
     width: 750px;
-  }
-  .vcenter{
-    top: 17%;
   }
 }
 
@@ -473,9 +467,6 @@ h2 {
   .thousand{
     width: 1000px;
   }
-  .vcenter{
-    top: 50%;
-  }
 
 }
 
@@ -488,8 +479,5 @@ h2 {
   .textareacontainer{
     width: 580px;
     margin-left: 10px;
-  }
-  .vcenter{
-    top: 50%;
   }
 }
