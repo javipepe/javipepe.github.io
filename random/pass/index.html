@@ -1,26 +1,50 @@
-<script>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "letmein") {
-alert('You Got it Right!');
-window.open('protectpage.html');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+
+<script language="JavaScript1.2">
+<!--
+
+
+function get_password() {
+  orig_pass = prompt("Please enter password","");
+  if (orig_pass!=null && orig_pass!="")
+  password = new Array(orig_pass.length);
+  for(i=0; i<orig_pass.length; i++) {
+    password[i] = orig_pass.charCodeAt(i);
+  }
+  return password;
 }
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
+
+password = get_password();
+orig = unescape("%3Ch1%3EHello%20it%27s%20me%3C/h1%3E");
+orig = orig.split("");
+
+passnum = orig.length % password.length;
+for(i=orig.length-1; i>=0; i--) {
+
+  passnum--;
+  if (passnum == -1) passnum = password.length - 1;
+  
+  pos1 = i;
+  pos2 = i + password[passnum];
+
+  if (pos2 >= orig.length) continue;
+
+  char1 = orig[pos1];
+  char2 = orig[pos2];
+
+  orig[pos2] = char1;
+  orig[pos1] = char2;
+
+}
+
+orig1 = "";
+for(i=0;i<orig.length;i++) {
+  orig1 = orig1 + orig[i];
+}
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+document.write(orig1);
+
+//-->
+
 </script>
-<center>
-<form>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
-</form>
-</center>
+<noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
