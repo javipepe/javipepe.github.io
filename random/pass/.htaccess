@@ -1,4 +1,6 @@
+<FilesMatch "index.html">
 AuthType Basic  
 AuthName "restricted area"  
-AuthUserFile /random/pass/.htpasswd  
+AuthUserFile ~/random/pass/.htpasswd  
 require valid-user
+</FilesMatch>
