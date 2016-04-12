@@ -1,140 +1,151 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Javi</title>
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-	<meta name="description" content="Javipepe's webpage">
-	<meta name="author" content="Javipepe">
-	<meta name="theme-color" content="#ddd">
-	<link rel="icon" type="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png" href="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png">
-
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-	<script src="js/typed.js"></script>
-	<link href='css/animate.css' rel='stylesheet' type='text/css'>
-
-	<link href="http://fonts.googleapis.com/css?Raleway:300" rel="stylesheet" type="text/css">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/main.css">
-	
-	<script>
-	  $(function(){
-	      $(".typerino").typed({
-	        strings: ["^900&lt;p&gt;I love &lt;b&gt;developing&lt;/b&gt; and &lt;b&gt;web design&lt;/b&gt;&lt;/p>"],
-	        typeSpeed: 6
-	      });
-				$(".typerino").delay(6500).fadeOut();
-				$(".realcode").delay(7000).fadeIn();
-	  });
-	</script>
-	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-
-</head>
-<body class="text-center center-block ">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javi's Website</title>
+  <link rel="icon" type="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png" href="http://1.bp.blogspot.com/-GQ1advCXPEI/UYUMlQBMl1I/AAAAAAAAAEE/tX5CqUQKDvc/s200/vortex_overlay.png">
 
 
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
-	<div class="wrapper">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <!-- thanks http://www.mattboldt.com/ -->
 
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 
+      <script>
+      $(function(){
+        $(".element").typed({
+          strings: ["", " ^1000 I am a freelance developer, ^1000 graphic designer, ^1000 pianist ^2000 and series guru. "],
+          typeSpeed: 20,
+          backDelay: 500,
+        });
 
-	<a data-toggle="modal" role="button" href="#contact"><div class="triangle-topright"><i class="fa fa-envelope fa-2x"></i></div></a>
+        $(".contact").delay(10000).fadeIn();
+        $(".eggtrig").delay(13000).fadeIn();
+        $(".eggtrig").delay(800).fadeOut();
 
-	<div class="vcenter">
+      });
+      </script>
 
+      <script>
+        num = 0;
+        $(function(){
+          $(".name").click(function(){
+            num++;
 
-			<div class="blocks">
-				<div class="animated fadeInUpBig">
-					<h1 class="mainname">JAVI</h1>
-					<div class="social animated bounceInLeft delay-1" >
-						<a href="http://twitter.com/ocnjavipepe" style="margin-left: 17px;">
-							<i style="color:#55acee;" class="twitter fa fa-twitter fa-3x"></i>
-						</a>
-						<a href="http://github.com/javipepe">
-							<i style="color: #8E44AD" class="fa fa-github fa-3x"></i>
-						</a>
-						<a href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g">
-							<i style="color: #e52d27" class="fa fa-youtube-play fa-3x"></i>
-						</a>
-					</div>
-					<!--
-					<p class="allthetext"></p>
+            if (num == 3) {
+              $(".egg").fadeIn();
+              $(".egg").delay(8000).fadeOut();
+            }
+          })
 
-					<h4 class="descm">
-							<input id="trig" type="button" href="#" onclick="appearAndShow()" class="btn amtrigger" value="Know me better">
-					</h2>
-				-->
+        });
+      </script>
 
-					<h3 class="desc">
-						<span class="typerino"></span><span class="realcode" style="display:none;">I love <b>developing</b> and <b>web design</b></span>
-					</h3>
-					<p class="par" style="margin-top: 3em; margin-left:auto; margin-right:auto; margin-bottom:1.5em; width:20%; height:auto; color:white; font-family:Raleway;">Greetings, fellow viewer! I'm Javi and I'm currently 15 years old. I started programming and messing around with things when I was 8, I made a calculator with memory that could do basic operations; it's not too much, I know, but that was my first contact with Basic. Nowadays I focus on object oriented programming and visual tech art (I love material and flat design, too!). As for smallish yet cool projects I have recently engaged myself with (though most of it is private), I have made: <br></p>
-					<div style="background: rgba(255,255,255,0.3);padding:1.3em;">
-					<div class="list-inline" style=" color:white; display:inline">
-						<li style="max-width:30%;" class="par span2 offset3">
-							<b><a href="https://github.com/javipepe/endpoint-hitter-ruby">endpoint-hitter-ruby</a></b><br>It's an easy user-friendly API for sending POST and GET requests to endpoints (with parameters) and print out the output
-						</li>
-						<li style="max-width:30%;" class="par span2">
-							<b><a href="https://github.com/javipepe/BukkitFullOfMoon">bukkitfullofmoon <i class="fa fa-code-fork"></i></a></b><br>It's a <b><a href="http://minecraft.net">Minecraft</a></b> multiplayer plugin which autogenerates a moon terrain and some random american flags, featuring chunkgenerators and blockpopulators.
-						</li>
-						<li style="max-width:30%;" class="par span2">
-							<b><a href="https://github.com/javipepe/android-screenshot-observer">android-screenshot-obs</a></b><br>Activity listener for <b><a href="https://www.android.com">Android</a></b> projects, fires when a screenshot (and optionally, every image) is taken / added to gallery.
-						</li>
-					</div>
-				</div>
+    </head>
+    <body>
+      <!-- top nav -->
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <!-- TODO find something important for nav links -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="container">
+        <div class="jumbotron text-center">
+          <h1 class="name" style="color:white !important">JAVI</h1>
+          <h5 class="egg" style="display:none;color:#ddd !important"><i>I also make bad puns...</i> What did the pirate say on his 80th birthday? Aye matey</h5>
+          <h2 class="element">
 
-				<p class="par" style="margin-top: 3em; margin-left:auto; margin-right:auto; margin-bottom:1.5em; width:20%; height:auto; color:white; font-family:Raleway;">I also have worked for the <b><a href="http://avicus.net">Avicus Minecraft Multiplayer Network</a></b> for about half a year now. For any suggestions / concerns / wishes to talk / or just... contact me anyhow, send me a message using the top right envelope symbol, or alternatively (though the same), email me at <b><a href="mailto:me@javipepe.pw">me@javipepe.pw</a></b>.<br><br> Have a great day! <img src="http://forum.ykt.ru/images/emoji/1f38a.png"><br><br>
+          </h2>
 
-
-				<div class="contact animated modal fade" id="contact" role="dialog">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button style="color:red" type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Get in touch</h4>
-							</div>
-							<form id="contact_form" action="//formspree.io/me@javipepe.pw" method="POST" enctype="multipart/form-data">
-								<div class="modal-body">
-											<div class="entry row">
-													<label for="name">NAME</label><br>
-													<input id="name" type="text" name="name" placeholder="John Appleased" required>
-											</div>
-											<div class="entry row">
-													<label for="email">EMAIL</label><br>
-													<input id="email" type="email" name="e-mail" placeholder="me@javipepe.pw" required>
-											</div>
-											<div class="entry row">
-													<label for="name">MESSAGE</label><br>
-													<textarea id="message" type="text" name="message" cols="30" rows="7" placeholder="Salut Javi..." required></textarea>
-											</div>
-											<input type="hidden" name="_next" value="/thanks" />
-
-								</div>
-								<div class="modal-footer">
-
-										<input type="submit" value="Send &raquo;" class="btn btn-info btn-large">
-
-								</div>
-							</form>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-	</div>
-</div>
-<div class="foot" style="background: rgba(0,0,0,0.5)">
-
-	<div style="display:inline-block">Made with <i class="fa fa-heart"></i> in Madrid, Spain</div>
-</div>
-</body>
-</html>
+          <div class="contact" style="display:none;">
+            <h3>
+              <a href="mailto:me@javipepe.pw">me@javipepe.pw</a><br>
+              <a href="mailto:javi@avicus.net">javi@avicus.net</a>
+            </h3>
+          </div>
+          <h6 class="eggtrig" style="display:none;">click my name 3 times...</h6>
+          <!--  <h2 class="element"></h2> -->
+        </div>
+    </div>
+    <!-- bottom nav -->
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="link-alert" href="http://www.javipepe.pw" target="_blank">Javi &copy; 2016 - Under Creative Commons (may you copy, give gredits)</a></li>
+            <li><a href="https://github.com/javipepe" target="_blank">github</a></li>
+            <li><a href="http://www.twitter.com/ocnjavipepe" target="_blank">twitter</a></li>
+            <li><a href="https://www.youtube.com/channel/UC2hS8iOX6vR8hReDkQusZ3g" target="_blank">youtube</a></li>
+            <!-- my projects -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">java / bukkit / spigot (NOTE: Many are private)</li>
+                <li><a href="https://github.com/javipepe/slackcraft" target="_blank">slackcraft</a></li>
+                <li><a href="https://github.com/javipepe/Orbs" target="_blank">orbs</a></li>
+                <li><a href="https://github.com/javipepe/Freeze" target="_blank">freeze</a></li>
+                <li><a href="https://github.com/javipepe/punch" target="_blank">punch</a></li>
+                <li><a href="https://github.com/javipepe/deprecated-jsoup-parser" target="_blank">deprecated-jsoup-parser</a></li>
+                <li class="dropdown-header">ruby and android</li>
+                <li><a href="https://github.com/javipepe/endpoint-hitter-ruby" target="_blank">endpoint-hitter-ruby</a></li>
+                <li><a href="https://github.com/javipepe/android-screenshot-observer" target="_blank">android-screenshot-observer</a></li>
+<!--                 <li class="divider"></li> -->
+                <li class="dropdown-header">web</li>
+                <li><a href="https://github.com/javipepe/javipepe.github.io" target="_blank">this website</a></li>
+                <li><a href="https://github.com/javipepe/rainbow" target="_blank">rainbow (JS lib)</a></li>
+              </ul>
+            </li>
+            <!-- mc -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">minecraft <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <!--  -->
+                <li class="dropdown-header">avicus - game plugin developer</li>
+                <li><a href="https://avicus.net" target="_blank">website</a></li>
+                <li><a href="https://avicus.net/Javipepe" target="_blank">my profile</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">overcast - tournament referee</li>
+                <li><a href="http://oc.tc" target="_blank">website</a></li>
+                <li><a href="http://oc.tc/Javipepe" target="_blank">my profile</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">general further info<br/><br/>i have developed minecraft plugins for near 3 years now, key in Java and database management. Minecraft is a game property of Mojang, a swedish company.</li>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </body>
+    </html>
