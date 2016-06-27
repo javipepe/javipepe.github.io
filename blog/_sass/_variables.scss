@@ -1,0 +1,59 @@
+// colors
+$color-black: #111111;
+$color-white: #fcfcfc;
+$color-orange: #d16b19;
+$color-grey-dark: #5a5a5a;
+$color-blue: #197fd1;
+$color-green: #1BA914;
+$color-blue-darker: darken($color-blue, 8);
+$color-white-grey: darken($color-white, 4);
+$color-grey: darken($color-white, 10);
+$color-grey-darker: darken($color-grey, 7);
+$color-orange-dark: darken($color-orange, 12);
+
+// sizes
+$border-s: 4px;
+
+// font families
+$font-family-open-sans-condensed: 'Open Sans Condensed', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-droid-serif: 'Droid Serif', serif;
+
+// font size (f-s)
+$f-s-M: 1rem;
+$f-s-S: decrease-by-percentage($f-s-M, 30);
+$f-s-1-25M: increase-by-percentage($f-s-M, 25);
+$f-s-1-5M: increase-by-percentage($f-s-M, 50);
+$f-s-2M: increase-by-percentage($f-s-M, 100);
+
+// line height (l-h)
+$l-h-2-1: 2.1;
+$l-h-M: 1.7;
+$l-h-1-25: 1.25;
+$l-h-1-15: 1.15;
+
+$l-h-baseline: $f-s-M * 1.5;
+$l-h-baseline-half: $l-h-baseline * 0.5;
+$l-h-baseline-quarter: $l-h-baseline * 0.25;
+
+// letter spacing (l-s)
+$l-s-M: 0.1rem;
+$l-s-S: decrease-by-percentage($l-s-M, 25);
+$l-s-XS: decrease-by-percentage($l-s-M, 50);
+$l-s-XXS: decrease-by-percentage($l-s-M, 75);
+$l-s-L: increase-by-percentage($l-s-M, 25);
+$l-s-XL: increase-by-percentage($l-s-M, 50);
+$l-s-XXL: increase-by-percentage($l-s-M, 75);
+
+// transition speed (t-s)
+$t-s-M: 0.5s;
+$t-s-S: increase-by-percentage($t-s-M, 33);
+$t-s-L: decrease-by-percentage($t-s-M, 33);
+
+// media queries
+$media-query-min: 19rem;
+$media-query-med-1: 27rem;
+$media-query-med-2: 37rem;
+$media-query-max: $f-s-M * 1.5 * 26;
+$media-query-max-extra: 80rem;
+

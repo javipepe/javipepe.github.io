@@ -1,0 +1,23 @@
+---
+---
+
+@import "variables";
+body {
+  #wrapper {
+    header h1 {
+      display: none;
+    }
+  }
+  article {
+    h1, p {
+      text-align: center;
+    }
+    h1:before {
+      display: block;
+      content:'\2713';
+      font-weight: bold;
+      font-size: 9.445rem;
+      color: $color-green;
+    }
+  }
+}

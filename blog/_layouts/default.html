@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body style="background: #333">
+<div id="wrapper">
+    <header>
+    {% include header.html %}
+    </header>
+    <main id="start">
+        {{ content }}
+    </main>
+    {% include paginator.html %}
+    <footer>
+        {% include footer.html %}
+    </footer>
+</div>
+{% if site.disqus %}
+<script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+{% endif %}
+</body>
+</html>

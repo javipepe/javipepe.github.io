@@ -1,0 +1,10 @@
+<article class="preview">
+    <header>
+        {% include title.html %}
+        {% include post_meta.html %}
+    </header>
+    <p>{{ page.content | strip_html | truncatewords: site.truncate_size | remove: '<p>' | remove: '</p>' }}
+    <a class="link-to-post"
+       href="{{ site.baseurl }}{{ page.url }}">&raquo;</a>
+    </p>
+</article>
