@@ -1,7 +1,6 @@
----
+--
 ---
 
-@import "variables";
 body {
   #wrapper {
     header h1 {
@@ -18,6 +17,5 @@ body {
       font-weight: bold;
       font-size: 9.445rem;
       color: $color-green;
-    }
-  }
+    }  }
 }
